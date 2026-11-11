@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventario>
+    <componente id="C01">
+        <nombre>Disco Duro SSD 1TB</nombre>
+        <fabricante>Crucial</fabricante>
+        <precioUnitario>65.50</precioUnitario>
+        <cantidad>5</cantidad>
+    </componente>
+    <componente id="C02">
+        <nombre>Memoria RAM 16GB DDR5</nombre>
+        <fabricante>Corsair</fabricante>
+        <precioUnitario>82.00</precioUnitario>
+        <cantidad>3</cantidad>
+    </componente>
+    <componente id="C03">
+        <nombre>Procesador Intel i7</nombre>
+        <fabricante>Intel</fabricante>
+        <precioUnitario>310.00</precioUnitario>
+        <cantidad>2</cantidad>
+    </componente>
+    <componente id="C04">
+        <nombre>Fuente de Alimentación 750W</nombre>
+        <fabricante>Seasonic</fabricante>
+        <precioUnitario>95.00</precioUnitario>
+        <cantidad>4</cantidad>
+    </componente>
+</inventario>
