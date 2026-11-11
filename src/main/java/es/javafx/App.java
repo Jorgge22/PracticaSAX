@@ -51,6 +51,16 @@ public class App {
          * - Valor total del inventario: 1,280.50 €
          *
          * */
+        try {
+            File inputFile = new File("componentes.xml");
 
+            SAXParserFactory factory = SAXParserFactory.newInstance();
+            SAXParser saxParser = factory.newSAXParser();
+
+            ComponentesHandle componentesHandle = new ComponentesHandle();
+            saxParser.parse(inputFile, componentesHandle);
+        } catch (ParserConfigurationException | SAXException | IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
