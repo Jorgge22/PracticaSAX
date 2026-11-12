@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class App {
     public static void main(String[] args) {
-        /**
+        /*
          * Implementar un analizador SAX que tome como parámetro de entrada un documento componentes.xml (toma el que te facilito si quieres)
          *
          * El documento contiene el nombre del componente, el fabricantes, precio unitario y la cantidad que hay en stock.
@@ -25,8 +25,8 @@ public class App {
          *
          * Debes mostrar al finalizar, un resumen general donde se vea:
          *
-         *     Total de unidades almacenadas (suma de todas las cantidades)
-         *     Valor total del inventario (suma de todos los subtotales)
+         * Total de unidades almacenadas (suma de todas las cantidades)
+         * Valor total del inventario (suma de todos los subtotales)
          *
          * Ejemplo de salida por consola:
          *
