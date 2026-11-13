@@ -9,6 +9,8 @@ public class ComponentesHandle extends DefaultHandler {
     public String id, nombre, fabricante;
     public double precio, subtotal;
     public int cantidad;
+    public int cantidadTotal;
+    public double valorTotal = 0;
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
@@ -44,6 +46,7 @@ public class ComponentesHandle extends DefaultHandler {
 
             case "cantidad":
                 cantidad = Integer.parseInt(contenido.toString().trim());
+                cantidadTotal += cantidad;
                 break;
 
             case "subtotal":
@@ -57,7 +60,16 @@ public class ComponentesHandle extends DefaultHandler {
                 System.out.println("- Precio unitario: " + precio);
                 System.out.println("- Cantidad: " + cantidad + " unidades");
                 System.out.println("- Subtotal: " + (precio*cantidad));
+
+                valorTotal += precio*cantidad;
                 break;
         }
+    }
+
+    @Override
+    public void endDocument() {
+        System.out.println("=== RESUMEN GLOBAL ===");
+        System.out.println("- Total de artículos en stock: " + cantidadTotal);
+        System.out.println("- Valor total del inventario: " + valorTotal);
     }
 }
